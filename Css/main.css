@@ -1,0 +1,62 @@
+main {
+    width: 90%;
+    
+    margin: 10px auto;
+    margin-bottom: 0;
+    background-color: var(--dblue1);
+    padding: 20px 20px ;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dgrey3);
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+main span {
+    color: var(--dtdark3);
+    font-size: var(--spanPhone);
+}
+
+.result-naver {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-naver button {
+    margin: 0 3px;
+}
+.result-naver img {
+    height: 30px;
+}
+
+
+.result-naver {
+    width: 100%; 
+    margin: 5px auto;
+    padding: 0px;
+}
+
+.h-scrollable {
+    display: flex;
+    padding: 7px 0;
+    width: 70%;
+    overflow: scroll;
+    overflow-y: hidden;
+    margin: auto 15px;
+}
+.h-scrollable::-webkit-scrollbar {
+    display: none;
+}
+

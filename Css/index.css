@@ -1,0 +1,91 @@
+:root {
+    /*...Dark Theme....*/
+    /*...Background Colors......*/
+    --dgrey1: black;
+    --dgrey2: rgb(22,24,29);
+    --dgrey3: rgb(30,37,46);
+    --dgrey4: rgb(43,46,51);
+
+    --dblue1: rgb(6,5,21);
+    --dblue2: rgb(0,32,96);
+
+    --dred1: rgb(42,0,0);
+    --dred2: rgb(92,0,0);
+    --dred3: rgb(74,30,30);
+
+     /*...Border Colors......*/
+     --dborderGrey1: rgb(34,42,53);
+
+    /*...Text Colors......*/
+    --dtdark1: rgb(208,206,206);
+    --dtdark2: rgb(189,215,238);
+    --dtdark3: rgb(132,151,176);
+
+    --dtyellow: rgb(255,217,102);
+    --dtblue: rgb(0,76,240);
+
+    /*..........font sizes................*/
+    --spanPhone: 0.8rem;
+    --spanTabled: 1rem;
+    --spanPc: 1.1rem;
+
+    --h1Phone: 1.2rem;
+    --h1Tabled: 1.8rem;
+    --h1Pc: 2.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1.1rem;
+    user-select: none;
+}
+
+body {
+    color: var(--dtdark1);
+    background-color: var(--dgrey1);
+    font-family: Calibri, 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1.2rem;
+    min-width: 200px;
+}
+
+h1 {
+    font-size: var(--h1Phone);
+    text-align: center;
+}
+
+h3 {
+    font-size: 0.8rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 3px 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.search-bar input {
+    padding: 0px 7px;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    color: var(--dtdark2);
+    font-size: 0.8rem;
+}
+
+.search-bar img {width: 15px;}
+
+.search-bar input:focus {
+    outline: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--dgrey3);
+}
