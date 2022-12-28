@@ -1,3 +1,4 @@
+// console log shortenner
 function lg(o){console.log(o)}
 
 document.getElementById('goLeft').addEventListener('click', () => {ScrollIt(false)})
