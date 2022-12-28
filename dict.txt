@@ -5,3 +5,7 @@ all these funny changes are made in the fixx branch.
 here is the a new fix. the third from the fixx brand
 
 while fixx2 was away, i the master did this........bla......
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Handling an issue suggested by my very self on the remote repo.
+will commit it and hope this won't cause conflict on my next push command
