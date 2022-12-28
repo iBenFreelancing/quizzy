@@ -1,5 +1,6 @@
 "use strict";
 
+// console log shortenner
 function lg(o) {
   console.log(o);
 }
