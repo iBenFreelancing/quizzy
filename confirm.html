@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm selection</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/elements.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/confirm.css">
+    <link rel="stylesheet" href="Css/ctr.css">
+    <link rel="stylesheet" href="Css/mediaq.css">
+
+</head>
+<body>
+
+    <div class="confirm-it-wrapper">
+        <div class="close-confirm"><span class="close" id="closeConfirm"> <a href="/">x</a></span></div>
+        
+        <div class="confirm-it">
+            <div class="left-div">
+                <h3 id="confirmationHead">JavaScript Test</h3>
+                <table id="detailsTable">
+                    <tbody>
+                        <tr>
+                            <th>Course</th>
+                            <th>CourseName</th>
+                        </tr>
+                        <tr>
+                            <td>Level</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>No. of quizz</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Order</td>
+                            <td><span id="quizzOrder">Chronological</span><button id="sortBtn">^</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="submitBtn">confirm</button>
+            </div>
+            <div class="right-div">
+                <p>You are about to take a ${javascript beginner} level test. Only 10 questions are available for free users. Payed users have access to all questions and courses.
+                </p>
+                <ul>
+                    <li><a href="/">Return to homepage</a></li>
+                    <li><a href="/test.html">Subscript for full access</a></li>
+                    <li><a href="/">Schedule Certification Exam</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>    
+    
+    <script>
+        document.querySelector('#sortBtn').addEventListener('click', SortIt)
+        function SortIt(){
+            document.querySelector("#quizzOrder").innerText = document.querySelector("#quizzOrder").innerText == 'Chronological'?'Mixed':'Chronological';
+        }
+    </script>
+
+</body>
+</html>
