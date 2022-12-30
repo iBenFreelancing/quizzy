@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Quizz</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/elements.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/confirm.css">
+    <link rel="stylesheet" href="Css/ctr.css">
+    <link rel="stylesheet" href="Css/answer.css">
+    <link rel="stylesheet" href="Css/mediaq.css">
+
+</head>
+<body>
+    <div class="quizz-main-wrapper">
+        <div class="close-confirm"><span class="close" id="closeConfirm"> <a href="/">x</a></span></div>
+        <h1>Advanced JavaScript MCQ</h1>
+        <div class="quizz-wrapper">
+            <div class="quizz-settings-wrapper">
+                <div class="use-timer">
+                    <img src="/Images/radioOff.png" width="3px" height="auto" alt="off">
+                    <small>Auto submit</small>
+                    <img src="/Images/radioOn.png" width="3px" height="auto" alt="on">
+                    <small>Use time</small>
+                </div>
+                <button id="timerBtn">27</button>
+                <img src="/Images/stopI.png" width="40px" height="40px" alt="stop timer">
+                <div class="pop-comment">
+                    <img src="/Images/commentI.png" width="50px" alt="comments">
+                    <small id="popUp">2</small>
+                </div>
+            </div>
+            <div class="quizz-body-wrapper">
+                <p id="question"> Question</p>
+                <div class="infor-icon-wrapper"><button class="close">i</button></div>
+                <div class="opt"><button id="btnA">A</button><span id="answerA">answer bhihb hguihgiuhi hiuhiuh h uhiuhu uhuihuhi ihiuhuhui ihuihui uhiuhA</span></div>
+                <div class="opt"><button id="btnA">B</button><span id="answerB">answer B</span></div>
+                <div class="opt"><button id="btnA">C</button><span id="answerC">answer C</span></div>
+                <div class="opt"><button id="btnA">D</button><span id="answerD">answer D</span></div>
+                <div class="submit-wrapper"><button class="submitBtn">Submit</button></div>
+            </div>
+            <div class="quizz-score-wrapper">
+                <img src="/Images/hidearrowI.png" width="30px" alt="show/hide live result">
+                <div class="live-result">
+                    <h4>Live Result</h4>
+                    <div class="l-r-content">
+                        <div class="r-item"><button>7</button><small>Total Attempts</small></div>
+                        <div class="r-item"><button>2</button><small>Passed</small></div>
+                        <div class="r-item"><button>7</button><small>Failed</small></div>
+                        <div class="r-item"><button>46%</button><small>Success Rate</small></div>
+                        <div class="r-item"><button>F</button><small>Grade</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quizz-naver">
+            <small>Skip</small>
+            <small>Prev</small>
+            <small>&nbsp;</small>
+            <small>Next</small>
+            <small>Skip</small>
+            <img src="/Images/skip.png" width="40px" style="transform: rotate(180deg);" alt="skip">
+            <img src="/Images/singleArrow.png" width="50px" style="transform: rotate(180deg);" alt="previous">
+            <span>14 of 50</span>
+            <img src="/Images/singleArrow.png" width="50px" alt="next">
+            <img src="/Images/skip.png" width="40px" alt="skip">
+            
+        </div>
+
+        <div class="quizz-list">
+            <div class="result-naver">
+                <button class="hideit">Previous</button>
+                <img src="/Images/singleArrow.png" id="goLeft" style="transform: rotate(180deg);" height="60px" width="auto" alt="next result page">
+                <div class="h-scrollable">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>10</button>
+                    <button>11</button>
+                    <button>12</button>
+                    <button>13</button>
+                    <button>14</button>
+                    <button>15</button>
+                    <button>16</button>
+                    <button>17</button>
+                    <button>18</button>
+                    <button>19</button>
+                    <button>20</button>
+                </div>
+                <img src="/Images/singleArrow.png" id="goRight" height="60px" width="auto" alt="next result page">
+                <button class="hideit">Next</button>
+            </div>
+        </div>
+    </div> 
+
+    <div class="quizz-info-wrapper hideit">
+        <div class="close-confirm"><span class="close"> <a href="/">x</a></span></div>
+        <div class="quizz-info">
+            <p>lorem ipsum dolor lorema ipsioma</p>
+            <div class="info-foot-wrapper">
+                <h5>Author's Name</h5>
+                <div class="info-actions">
+                    <img src="/Images/likeI.png" width="20px" height="auto" alt="like">
+                    <img src="/Images/rejectI.png" width="20px" height="auto" alt="reject">
+                    <img src="/Images/commentI.png" width="20px" height="auto" alt="comment">
+                    <img src="/Images/editI.png" width="20px" height="auto" alt="edit">
+                </div>
+            </div>
+        </div>
+        <h3>Comment</h3>
+        <div class="comment-wrapper">
+            <div class="commentor-info">
+                <img src="/Images/commentorI.png" width="60px" height="auto" alt="commentor's name">
+                <h4>Author's Name</h4>
+            </div>
+            <p>Reply to comment</p>
+            <div class="info-foot-wrapper">
+                <h5>&nbsp;</h5>
+                <div class="info-actions">
+                    <img src="/Images/likeI.png" width="20px" height="auto" alt="like">
+                    <img src="/Images/rejectI.png" width="20px" height="auto" alt="reject">
+                    <img src="/Images/commentI.png" width="20px" height="auto" alt="comment">
+                    <img src="/Images/editI.png" width="20px" height="auto" alt="edit">
+                </div>
+            </div>
+        </div>
+        <div class="comment-wrapper">
+            <div class="commentor-info">
+                <img src="/Images/commentorI.png" width="60px" height="auto" alt="commentor's name">
+                <h4>Author's Name</h4>
+            </div>
+            <p>explaining dejection</p>
+            <div class="info-foot-wrapper">
+                <h5>&nbsp;</h5>
+                <div class="info-actions">
+                    <img src="/Images/likeI.png" width="20px" height="auto" alt="like">
+                    <img src="/Images/rejectI.png" width="20px" height="auto" alt="reject">
+                    <img src="/Images/commentI.png" width="20px" height="auto" alt="comment">
+                    <img src="/Images/editI.png" width="20px" height="auto" alt="edit">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+   <script src="/Js/index.js"></script>
+</body>
+</html>
