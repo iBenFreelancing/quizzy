@@ -1,0 +1,123 @@
+body {
+    background-color: var(--dgrey4);
+    background-image: none;
+}
+.quizz-main-wrapper {
+    background-color: transparent;
+}
+.all-quizz-wrapper {
+    background-color: var(--dgrey3);
+    margin: 0 auto;
+}
+
+.quizz-x-wrapper {
+    border: 1px solid var(--dgrey4);
+    background-color: var(--dgrey2);
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.remove-quizz {
+    text-align: right;
+}
+.qizz-grid {
+    display: grid;
+    grid-template-columns: calc(100% - 15px) 15px;
+    row-gap: 20px;
+    column-gap: 5px;
+    align-items: center;
+}
+.qizz-grid textarea {
+    padding: 7px;
+    background-color: transparent;
+    border: 1px solid var(--dgrey4);
+    border-radius: 5px;
+    color: white;
+    min-height: 50px;
+}
+.qizz-grid img {
+    width: 15px;
+}
+
+
+
+
+.add-fields {
+    width: 100%;
+    text-align: right;
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+.add-fields span{
+    display: inline-block;
+    background-color: var(--dgrey4);
+    width: fit-content;
+    padding: 3px 7px;
+    border-radius: 20px;
+}
+
+.qx-author {
+    border: 1px solid var(--dgrey4);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.qx-author textarea {
+    min-height: 50px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding: 10px;
+}
+
+.cat-wrapper, .cat-x {
+    display: flex;
+    flex-direction: column;
+}
+.cat-wrapper h5 {
+    text-align: left;
+}
+.cat-wrapper {
+    height: 100px;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--dgrey4);
+    margin-top: 30px;
+}
+
+.cat-opt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cat-x {
+    align-items: center;
+    justify-content: center;
+}
+.cat-x img {
+    width: 20px;
+}
+
+.qx-submit-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.qx-submit-wrapper small {
+    text-align: center;
+}
+.submit-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.submit-wrapper button {
+    margin: 0 10px;
+}
+
+.submit-all-wrapper {
+    text-align: center;
+    margin: 30px 0;
+    margin-bottom: 50px;
+}

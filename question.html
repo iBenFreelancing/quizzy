@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Quizz</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/elements.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/confirm.css">
+    <link rel="stylesheet" href="Css/ctr.css">
+    <link rel="stylesheet" href="Css/answer.css">
+    <link rel="stylesheet" href="Css/question.css">
+    <link rel="stylesheet" href="Css/mediaq.css">
+
+</head>
+<body>
+    <div class="quizz-main-wrapper">
+        <div class="close-confirm"><span class="close" id="closeConfirm"> <a href="/">x</a></span></div>
+        <h1>Advanced JavaScript MCQ</h1>
+    </div>
+
+    <div class="all-quizz-wrapper">
+        <div class="quizz-x-wrapper" id="quizzXWrapper">
+            <div class="quizz-x-body-wrapper">
+                <div class="qx-quizz">
+                    <div class="remove-quizz"><span class="closeit" title="delete question">x</span></div>
+                    <div class="qizz-grid">
+                        <textarea id="question"> Question</textarea><img src="/Images/mqOn.png" width="40px" alt="multiple answers" title="enable/disable multiple answers">
+                        <textarea id="question"> Enter answer A here</textarea><img src="/Images/radioOff.png" alt="answer a">
+                        <textarea id="question"> Enter answer B here</textarea><img src="/Images/radioOff.png" alt="answer a">
+                        <textarea id="question"> Enter answer C here</textarea><img src="/Images/radioOff.png" alt="answer a">
+                        <textarea id="question"> answer D</textarea><img src="/Images/radioOff.png" alt="answer a">
+                    </div>
+                    <div class="add-fields"><span class="closeit" title="add field">+</span></div>
+                </div>
+                <div class="qx-author">
+                    <textarea cols="30" rows="10">Click here to explain the correct answer and possibly say why the other answers are wrong</textarea>
+                    <div class="cat-wrapper">
+                        <h5>Category:</h5>
+                        <div class="cat-opt">
+                            <div class="cat-x"><img src="/Images/radioOff.png" alt=""><small>Beginner</small></div>
+                            <div class="cat-x"><img src="/Images/radioOn.png" alt=""><small>Intermediate</small></div>
+                            <div class="cat-x"><img src="/Images/radioOff.png" alt=""><small>Advance</small></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="qx-submit-wrapper">
+                <small>space for error/success messages</small>
+                <div class="submit-wrapper">
+                    <button>+</button>
+                    <small>Next Quizz</small>
+                </div>
+                
+            </div>
+        </div>        
+    </div> 
+    <div class="submit-all-wrapper">
+        <button class="submitBtn">Submit / Submit all</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.extrapad, h1 {
+  padding: 50px;
+  background-color: greenyellow;
+}
+
+h1 {
+  color: orangered;
+  border-radius: 25px;
+}
+
+button {
+  padding: 20px;
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+}
+
+.ct {
+  padding: 100px;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #0040ff;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 28px;
+}
+
+.foo {
+  font-size: 8px;
+  border: 20px solid blue;
+  padding: 30px;
+  background-color: black;
+}
+.foo * {
+  color: white;
+}
+
+.tit {
+  color: black;
+  font-size: 8rem;
+  padding: 50px;
+  background-color: orangered;
+  margin: 0;
+  text-align: center;
+}
+
+div {
+  padding: 30px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1px solid white;
+}
