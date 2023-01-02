@@ -1,1 +1,13 @@
 .hideit {display: none;}
+
+.wrong {
+    background-image: linear-gradient(to bottom, var(--dred3) 0%, var(--dred1) 30%, var(--dred2) 100%);
+}
+
+.right {
+    background-image: linear-gradient(to bottom, var(--dblue2) 0%, var(--dblue2) 90%, var(--dgrey4) 100%);
+}
+.skip {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(255, 255, 255) 100%);
+    color: black;
+}

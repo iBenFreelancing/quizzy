@@ -90,7 +90,7 @@ header {
    margin: 10px 10px;
     display: block;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: var(--menuFontSize);
 }
 .menu-wrapper .pages span:hover {
   font-weight: bold;

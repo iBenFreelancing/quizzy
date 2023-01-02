@@ -8,12 +8,10 @@
 
 @media screen and (min-width: 480px){
 
-    h1 {font-size: var(--h1Tabled);}
-    h3 {font-size: var(--h1Phone); font-weight: normal;}
     header {grid-template-columns: 50px calc(100% - 50px); padding: 40px 15px;}
     .logo {width: 60px;}
     .menu-wrapper {top: 100px;width: 94%;left: 3%;}
-    .menu-wrapper span { font-size: 1.1rem;margin: 20px 10px; }
+    .menu-wrapper span { margin: 20px 10px; }
     .search-bar img {width: 25px; margin-left: 10px;}
     .search-bar input {padding:20px; font-size:1.1rem;}
     .search-bar {width: 70%; margin: 0 40px;background-color: var(--dgrey4); }  
@@ -81,7 +79,7 @@
     grid-template-columns: 25% 75%;
    
 }
-button {font-size: var(--spanPc);padding:10px 15px;border-radius: 5px;}
+button {font-size: var(--buttonv);padding:10px 15px;border-radius: 5px;}
 .result-naver img {height: 50px;}
 
 }
@@ -93,8 +91,6 @@ button {font-size: var(--spanPc);padding:10px 15px;border-radius: 5px;}
 @media screen and (min-width: 1200px){
     
     button {padding:10px 20px;}
-    h1 {font-size: var(--h1Pc);}
-    h3 {font-size: var(--h1Tabled); font-weight: normal;}
     .banner {height: 350px; width: 70%;}
     header{grid-template-columns: 80px 60% auto;padding: 25px; max-width: 1400px; margin: 0 auto;}
     .logo {width: 70px; height: auto;}

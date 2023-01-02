@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>confirm selection</title>
     <link rel="stylesheet" href="Css/index.css">
-    <link rel="stylesheet" href="Css/elements.css">
+    <link rel="stylesheet" href="Css/dist/elements.css">
     <link rel="stylesheet" href="Css/header.css">
     <link rel="stylesheet" href="Css/confirm.css">
     <link rel="stylesheet" href="Css/ctr.css">
@@ -43,7 +43,7 @@
                 <button class="submitBtn">confirm</button>
             </div>
             <div class="right-div">
-                <p>You are about to take a ${javascript beginner} level test. Only 10 questions are available for free users. Payed users have access to all questions and courses.
+                <p>You are about to take <span>a ${javascript beginner} </span> level test. Only 10 questions are available for free users. Payed users have access to all questions and courses.
                 </p>
                 <ul>
                     <li><a href="/">Return to homepage</a></li>
@@ -58,7 +58,7 @@
     <script>
         document.querySelector('#sortBtn').addEventListener('click', SortIt)
         function SortIt(){
-            document.querySelector("#quizzOrder").innerText = document.querySelector("#quizzOrder").innerText == 'Chronological'?'Mixed':'Chronological';
+            document.querySelector("#quizzOrder").innerText = document.querySelector("#quizzOrder").innerText == 'Chronological'?'Random':'Chronological';
         }
     </script>
 </body>

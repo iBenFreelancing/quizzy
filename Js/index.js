@@ -1,6 +1,8 @@
 // console log shortenner
 function lg(o){console.log(o)}
 
+/*
+
 document.getElementById('goLeft').addEventListener('click', () => {ScrollIt(false)})
 document.getElementById('goRight').addEventListener('click', () => {ScrollIt(true)})
 let scrollStep = 300, currentScroll = 0;
@@ -38,3 +40,4 @@ document.querySelector('#menuI').addEventListener('click', () => {
 document.querySelector('#closeMenu').addEventListener('click', () => {
     document.querySelector('#menuI').click();
 })
+*/

@@ -25,38 +25,6 @@
     --dtblue: rgb(0,76,240);
 
     /*..........font sizes................*/
-    --spanPhone: 0.8rem;
-    --spanTabled: 1rem;
-    --spanPc: 1.1rem;
-
-    --h1Phone: 1.2rem;
-    --h1Tabled: 1.8rem;
-    --h1Pc: 2.5rem;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    user-select: none;
-}
-
-body {
-    color: var(--dtdark1);
-    background-color: var(--dgrey1);
-    font-family: Calibri, 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 1.2rem;
-    min-width: 200px;
-}
-
-h1 {
-    font-size: var(--h1Phone);
-    text-align: center;
-}
-
-h3 {
-    font-size: 0.8rem;
-    padding: 10px 0;
-    text-align: center;
 }
 
 .search-bar {
