@@ -118,15 +118,17 @@
     margin: 0;
 }
 
+
+
 .quizz-score-wrapper img {
     height: 50px;
     width: 20px;
 }
 
+
 .live-result {
     display: flex;
     flex-direction: column;
-    display: none;
 }
 
 .live-result .l-r-content {
@@ -210,4 +212,15 @@ width: fit-content;
 }
 .comment-wrapper .commentor-info h4 {
     margin-left: 20px;
+}
+
+
+
+
+
+
+
+.left-fixed {
+    top: 23vh;
+    left: calc(100% - 140px);
 }

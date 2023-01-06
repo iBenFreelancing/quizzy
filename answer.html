@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="Css/header.css">
     <link rel="stylesheet" href="Css/main.css">
     <link rel="stylesheet" href="Css/confirm.css">
-    <link rel="stylesheet" href="Css/ctr.css">
     <link rel="stylesheet" href="Css/answer.css">
+    <link rel="stylesheet" href="Css/ctr.css">
+    
     <link rel="stylesheet" href="Css/mediaq.css">
 
 </head>
@@ -28,7 +29,7 @@
                     <small>Use time</small>
                 </div>
                 <button id="timerBtn">27</button>
-                <img src="/Images/stopI.png" width="40px" height="40px" alt="stop timer">
+                <img src="/Images/stopI.png" id="startTest" width="40px" height="40px" alt="stop timer">
                 <div class="pop-comment">
                     <img src="/Images/commentI.png" width="50px" alt="comments">
                     <small id="popUp">2</small>
@@ -36,16 +37,16 @@
             </div>
             <div class="quizz-body-wrapper">
                 <p id="qz"> Question</p>
-                <div class="infor-icon-wrapper"><button class="close">i</button></div>
+                <div class="infor-icon-wrapper hideit" id="quizzDetails"><button class="close" id="openInfoWrapper">i</button></div>
                 <div class="opt"><button id="qbtno1">A</button><span id="qzo1">answer bhihb hguihgiuhi hiuhiuh h uhiuhu uhuihuhi ihiuhuhui ihuihui uhiuhA</span></div>
                 <div class="opt"><button id="qbtno2">B</button><span id="qzo2">answer B</span></div>
                 <div class="opt"><button id="qbtno3">C</button><span id="qzo3">answer C</span></div>
                 <div class="opt"><button id="qbtno4">D</button><span id="qzo4">answer D</span></div>
                 <div class="submit-wrapper"><button class="submitBtn" id="nextq">Submit</button></div>
             </div>
-            <div class="quizz-score-wrapper">
-                <img src="/Images/hidearrowI.png" width="30px" alt="show/hide live result">
-                <div class="live-result">
+            <div class="quizz-score-wrapper left-fixed">
+                <img src="/Images/hidearrowI.png" id="showScore" width="30px" alt="show/hide live result">
+                <div class="live-result hideit" id="liveScore">
                     <h4>Live Result</h4>
                     <div class="l-r-content">
                         <div class="r-item"><button>7</button><small>Total Attempts</small></div>
@@ -84,8 +85,8 @@
         </div>
     </div> 
 
-    <div class="quizz-info-wrapper hideit">
-        <div class="close-confirm"><span class="close"> <a href="/">x</a></span></div>
+    <div class="quizz-info-wrapper hideit" id="infoWrapper">
+        <div class="close-confirm"><span class="close" id="closeInfoWrapper">x</span></div>
         <div class="quizz-info">
             <p>lorem ipsum dolor lorema ipsioma</p>
             <div class="info-foot-wrapper">
@@ -134,6 +135,7 @@
     </div>
  
    <script src="/Js/index.js"></script>
+   <script src="/Js/q.js"></script>
    <script src="/Js/quizz.js"></script>
 </body>
 </html>
