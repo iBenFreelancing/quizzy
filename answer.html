@@ -28,12 +28,12 @@
                     <img src="/Images/radioOn.png" width="3px" height="auto" alt="on">
                     <small>Use time</small>
                 </div>
-                <button id="timerBtn">27</button>
-                <img src="/Images/stopI.png" id="startTest" width="40px" height="40px" alt="stop timer">
+                <button id="timerBtn" class="circularBtn">27</button>
                 <div class="pop-comment">
                     <img src="/Images/commentI.png" width="50px" alt="comments">
                     <small id="popUp">2</small>
                 </div>
+                <button id="showScore" class="shadowBtn">live</button>
             </div>
             <div class="quizz-body-wrapper">
                 <p id="qz"> Question</p>
@@ -42,10 +42,9 @@
                 <div class="opt"><button id="qbtno2">B</button><span id="qzo2">answer B</span></div>
                 <div class="opt"><button id="qbtno3">C</button><span id="qzo3">answer C</span></div>
                 <div class="opt"><button id="qbtno4">D</button><span id="qzo4">answer D</span></div>
-                <div class="submit-wrapper"><button class="submitBtn" id="nextq">Submit</button></div>
+                <div class="submit-wrapper"><button class="submitBtn" id="nextq">Next</button></div>
             </div>
             <div class="quizz-score-wrapper left-fixed">
-                <img src="/Images/hidearrowI.png" id="showScore" width="30px" alt="show/hide live result">
                 <div class="live-result hideit" id="liveScore">
                     <h4>Live Result</h4>
                     <div class="l-r-content">
@@ -74,13 +73,13 @@
 
         <div class="quizz-list">
             <div class="result-naver">
-                <button class="hideit">Previous</button>
-                <img src="/Images/singleArrow.png" id="decreaseR" style="transform: rotate(180deg);" height="60px" width="auto" alt="next result page">
+                
+                <img src="/Images/singleArrow.png" id="goLeft" style="transform: rotate(180deg);" height="60px" width="auto" alt="next result page">
                 <div class="h-scrollable" id="hScroll">
                    
                 </div>
-                <img src="/Images/singleArrow.png" id="increaseR" height="60px" width="auto" alt="next result page">
-                <button class="hideit">Next</button>
+                <img src="/Images/singleArrow.png" id="goRight" height="60px" width="auto" alt="next result page">
+                
             </div>
         </div>
     </div> 
@@ -136,6 +135,8 @@
  
    <script src="/Js/index.js"></script>
    <script src="/Js/q.js"></script>
+   <script src="/Js/display.js"></script>
    <script src="/Js/quizz.js"></script>
+   
 </body>
 </html>

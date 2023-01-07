@@ -201,8 +201,6 @@ class Test {
         // load history object
         this.currentQuizz = {... this.allQuizz[oldID]}
         this.oldQuizz = true;
-       // lg(this.currentQuizz);
-        lg(this.currentQuizz.formats)
         // load quizz on page
         this.loadQuizz(Q[oldID]);
         this.liveUpdate();
@@ -240,32 +238,6 @@ let tx;
 5. fetch next question
 */
 
-class ShowIt {
-    constructor(eventType, triggerId, targertId, targetDefaultDisplayNone ){
-        this.sID = [... triggerId];
-        this.tID = targertId;
-        this.eType = eventType;
-        this.displayNone = targetDefaultDisplayNone;
-        this.#bindAll();   
-    }
-
-    #bindIt = (theID) => {
-       
-        document.querySelector('#' + theID).addEventListener(this.eType, () => {
-            let elm = document.querySelector('#' + this.tID);
-            if(this.displayNone){
-                elm.classList.remove('hideit');
-                this.displayNone = false;
-                return
-            }            
-            elm.classList.add('hideit');
-            this.displayNone = true;
-        })
-       
-    }
-
-    #bindAll = () => {for(let id of this.sID){ this.#bindIt(id); }}
-}
 
 
 this.addEventListener('load', () => {
@@ -278,8 +250,29 @@ this.addEventListener('load', () => {
         tx.quizzManager();
     })
 
-    document.querySelector('#startTest').addEventListener('click', () => {
-        tx.start();
-    })
-
 })
+
+
+/*
+....................TASKS.................. 
+1. push work to github
+2. create infinityfree account on iBen
+3. get free domai name on freenom for quizzy
+4. upload quizzy and test live site
+5. add skip (next and prev) for scroller
+6. add next and prev (without skip)
+7. add click arrows to scroll functionality on scroller
+8. update livescores
+9. enable and disable auto submit
+10. use timer
+11. remove start button
+12. redo live result
+13. add hints bar
+14. add option to minimize the skipped naver
+15. try other border options for answer fields
+16. add animation on hint and on moving to next question
+.
+.
+.
+z. add comments, likes and reply options for answered questions
+*/

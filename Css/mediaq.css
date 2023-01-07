@@ -95,7 +95,7 @@ button {font-size: var(--buttonv);padding:10px 15px;border-radius: 5px;}
     header{grid-template-columns: 80px 60% auto;padding: 25px; max-width: 1400px; margin: 0 auto;}
     .logo {width: 70px; height: auto;}
     .menu-wrapper span {font-size: 1.3rem;}
-    .menu-wrapper * {margin: 0 30px;}
+    .menu-wrapper * {margin: 0 20px;}
     .search-wrapper {width: 100%;}
     .search-bar {background-color: var(--dgrey2);}
     .result-naver img {height: 50px;}

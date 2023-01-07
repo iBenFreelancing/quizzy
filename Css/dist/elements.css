@@ -86,6 +86,20 @@ button:active {
   border-radius: 20px;
 }
 
+.shadowBtn {
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px orangered;
+  border-radius: 7px;
+  padding: 7px 15px;
+}
+
+.circularBtn {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 /* #Media Queries
 ================================================== */
 @media screen and (min-width: 480px) {

@@ -37,14 +37,6 @@
     font-size: 0.8rem;
 }
 
-.quizz-settings-wrapper button {
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
 .pop-comment {
     position: relative;
 }
@@ -221,6 +213,6 @@ width: fit-content;
 
 
 .left-fixed {
-    top: 23vh;
-    left: calc(100% - 140px);
+    top: 37vh;
+    left: calc(100% - 100px);
 }
