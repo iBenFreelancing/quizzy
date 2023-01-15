@@ -22,7 +22,7 @@
 }
 
 body {
-  color: var(--dtdark1);
+  color: var(--dtdark3);
   background-color: var(--dgrey1);
   font-family: Calibri, "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
   min-width: 200px;

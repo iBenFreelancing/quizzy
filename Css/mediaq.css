@@ -34,7 +34,9 @@
 }
 
 @media screen and (min-width: 600px){
-  
+    .quizz-wrapper {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -82,6 +84,45 @@
 button {font-size: var(--buttonv);padding:10px 15px;border-radius: 5px;}
 .result-naver img {height: 50px;}
 
+.quizz-wrapper {
+    grid-template-columns: 20% 50% 30%;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-start;
+    justify-items: center;
+}
+.quizz-body-wrapper {
+    width: 100%;
+}
+
+.quizz-settings-wrapper {
+    flex-direction: column;
+    width: fit-content;
+    height: 300px;
+}
+
+.shadowBtn {
+    display: none;
+  }
+
+  .quizz-score-wrapper {
+    width: fit-content;
+    position: relative;
+    top: 0;
+    left: 0;  
+    border: 1px solid var(--dgrey4);
+}
+
+.live-result {
+    display: block;
+}
+.r-item {
+    grid-template-columns: 40% 60%;
+    row-gap: 5px;
+    justify-items: left;
+}
+
 }
 
 @media screen and (min-width: 1000px){
@@ -102,6 +143,13 @@ button {font-size: var(--buttonv);padding:10px 15px;border-radius: 5px;}
 
     .search-result .item-x .course {
         padding-left: 50px;
+    }
+
+    .quizz-wrapper {
+        grid-template-columns: 20% 60% 20%;
+        column-gap: 20px;
+        width: 100%;
+        max-width: 1200px;
     }
 
 }

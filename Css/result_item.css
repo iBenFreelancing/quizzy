@@ -13,6 +13,7 @@
 
     .search-result .item-x {
     padding: 10px 5px;
+    padding-bottom: 20px;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 100%;
@@ -67,6 +68,8 @@
 .search-result .item-x .course {
     border: 0;
     display: block;
+    padding: 20px 10px;
+    padding-top: 0;
     font-size: var(--spanTabled);
     text-align: left;
 }

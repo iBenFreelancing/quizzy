@@ -29,10 +29,10 @@
                     <div class="remove-quizz"><span class="closeit" title="delete question">x</span></div>
                     <div class="qizz-grid">
                         <textarea id="question"> Question</textarea><img src="/Images/mqOn.png" width="40px" alt="multiple answers" title="enable/disable multiple answers">
-                        <textarea id="question"> Enter answer A here</textarea><img src="/Images/radioOff.png" alt="answer a">
-                        <textarea id="question"> Enter answer B here</textarea><img src="/Images/radioOff.png" alt="answer a">
-                        <textarea id="question"> Enter answer C here</textarea><img src="/Images/radioOff.png" alt="answer a">
-                        <textarea id="question"> answer D</textarea><img src="/Images/radioOff.png" alt="answer a">
+                        <textarea id="question"> Enter answer A here</textarea><img src="/Images/radiofalse.png" id="anso1" alt="answer a">
+                        <textarea id="question"> Enter answer B here</textarea><img src="/Images/radiofalse.png" id="anso2" alt="answer a">
+                        <textarea id="question"> Enter answer C here</textarea><img src="/Images/radiofalse.png" id="anso3" alt="answer a">
+                        <textarea id="question"> answer D</textarea><img src="/Images/radiotrue.png" id="anso4" alt="answer a">
                     </div>
                     <div class="add-fields"><span class="closeit" title="add field">+</span></div>
                 </div>
@@ -41,9 +41,9 @@
                     <div class="cat-wrapper">
                         <h5>Category:</h5>
                         <div class="cat-opt">
-                            <div class="cat-x"><img src="/Images/radioOff.png" alt=""><small>Beginner</small></div>
-                            <div class="cat-x"><img src="/Images/radioOn.png" alt=""><small>Intermediate</small></div>
-                            <div class="cat-x"><img src="/Images/radioOff.png" alt=""><small>Advance</small></div>
+                            <div class="cat-x"><img src="/Images/radiotrue.png" id="QLbeginner" alt=""><small>Beginner</small></div>
+                            <div class="cat-x"><img src="/Images/radiofalse.png" id="QLintermediate" alt=""><small>Intermediate</small></div>
+                            <div class="cat-x"><img src="/Images/radiofalse.png" id="QLadvance" alt=""><small>Advance</small></div>
                         </div>
                     </div>
                 </div>
@@ -62,5 +62,7 @@
     <div class="submit-all-wrapper">
         <button class="submitBtn">Submit / Submit all</button>
     </div>
+    <script src="/Js/display.js"></script>
+    <script src="/Js/set_quizz.js"></script>
 </body>
 </html>

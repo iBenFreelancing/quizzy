@@ -13,7 +13,7 @@ class Test {
         this.allQuizz = [];
         this.currentQuizz = {id:'', ans:[], answered: false, userChoice: [], formats:[]};
         this.lastQuizzIndex = -1;
-        this.data = {attempt: 0, pass: 0, fail: 0};
+        this.data = {attempts: 0, passed: 0, failed: 0};
 
         this.on = false;
         this.first = true;
@@ -71,7 +71,10 @@ class Test {
         this.setFomats([... qz.ans], 'right');
         this.loadQuizz(qz);
         this.#createBtn(newIndex+1);
-        this.liveUpdate();        
+        this.liveUpdate();
+        if(this.data.attempts > 0){ UpdateLiveResult(this.data)}; 
+        this.data.attempts +=1;
+        
     }
 
     clearCurrentQuizz = () => {
@@ -140,15 +143,16 @@ class Test {
         this.currentQuizz.answered = true;
         let btnHint = document.querySelector('#navBtn'+ (this.currentQuizz.id+1));
         btnHint.scrollIntoView({behavior:'smooth', inline:'center', block:'center'});
-        this.data.attempt +=1  
+       // this.data.attempts +=1  
         if(this.currentQuizz.ans.indexOf(ans) < 0){ 
             this.setFomats([ans], 'wrong');
             btnHint.classList.add('wrong');
-            this.data.fail +=1  
+            this.data.failed +=1  
         }else {
              btnHint.classList.add('right');           
-             this.data.pass +=1             
+             this.data.passed +=1             
         }
+        UpdateLiveResult(this.data)
         if(this.oldQuizz){
             let nextOldQuizzIndex = this.updateQuizz();
             if(nextOldQuizzIndex === false) { this.quizzManager()}
@@ -162,7 +166,6 @@ class Test {
     saveAnswer = () => {
       
         if(parseInt(this.currentQuizz.id) === this.allQuizz.length){
-            lg('we are pushing it');
             this.allQuizz.push({... this.currentQuizz});    
         }
        // lg(this.allQuizz)
@@ -242,37 +245,79 @@ let tx;
 
 this.addEventListener('load', () => {
    
+    let selectedCourse = JSON.parse(sessionStorage.getItem('course'));
+    document.querySelector('#testHeading').innerText = selectedCourse.level + " " + selectedCourse.name + " MCQ"
+    
     tx = new Test();
-    let result = new ShowIt('click', ['showScore'], 'liveScore', true)
+    let result = new ShowIt('click', ['showScore', 'hideResult'], 'liveScore', true)
     let qInfo = new ShowIt('click', ['openInfoWrapper','closeInfoWrapper'], 'infoWrapper', true)
     
     document.querySelector('#nextq').addEventListener('click', () => {
         tx.quizzManager();
     })
 
+    let asm = new DualOption('autoSubmitR',autoSubmit,false);
+    let ut = new DualOption('useTimeR',ShowHint,false);
+
+
 })
+
+
+function ShowHint(txt) {
+    document.querySelector('#hints').innerText = 'returned value is ' + txt;
+    setTimeout(() => {
+        document.querySelector('#hints').innerText = '  ';
+    }, 3000);
+}
+
+function autoSubmit(bool){
+    if(bool){
+        document.querySelector('#nextqnextq').classList.add('hideit');
+        ShowHint('btn is now visible')
+        return
+    }
+    document.querySelector('#nextqnextq').classList.remove('hideit');
+    ShowHint('btn is no longer visible')
+}
 
 
 /*
 ....................TASKS.................. 
-1. push work to github
-2. create infinityfree account on iBen
-3. get free domai name on freenom for quizzy
-4. upload quizzy and test live site
+
 5. add skip (next and prev) for scroller
 6. add next and prev (without skip)
 7. add click arrows to scroll functionality on scroller
-8. update livescores
-9. enable and disable auto submit
 10. use timer
-11. remove start button
-12. redo live result
-13. add hints bar
 14. add option to minimize the skipped naver
-15. try other border options for answer fields
 16. add animation on hint and on moving to next question
 .
 .
 .
 z. add comments, likes and reply options for answered questions
 */
+
+function UpdateLiveResult(obj){
+    let idSet = ['Qattempts','Qpassed','Qfailed','Qskipped','QsuccessRate','Qgrade'];
+    let scores = [];
+    
+    let mark = Math.ceil((obj.passed/obj.attempts) * 100);
+
+    for(let k in obj){scores.push(obj[k]);}
+    scores.push(obj.attempts - obj.passed - obj.failed);
+    scores.push(mark + "%");
+    scores.push(Grade(mark));
+
+    for(let i=0; i<idSet.length; i++){
+        document.querySelector('#'+ idSet[i]).innerText = scores[i];
+    }
+}
+
+function Grade(mark) {
+    if(mark < 35){return 'F'}  // 0 - 34 ......fail
+    if(mark < 50){return 'D'}  // 35 - 49 .....fail
+    if(mark < 60){return 'C'}   // 50 - 59
+    if(mark < 70){return 'B'}   // 60 - 69
+    if(mark < 80){return 'B+'}  // 70 - 79
+    if(mark < 90){return 'A'}   // 80 - 89
+    return 'A+'
+}

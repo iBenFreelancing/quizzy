@@ -37,3 +37,49 @@ class ShowIt {
 
     #bindAll = () => {for(let id of this.sID){ this.#bindIt(id); }}
 }
+
+class DualOption {
+    constructor(sourceId, callBackFxn, defaultState){
+        this.on = defaultState;
+        this.sID = sourceId;
+        this.callBack = callBackFxn;
+        this.#events();
+    }
+
+    #events = () => {
+        let that = this
+        document.querySelector('#'+ this.sID).addEventListener('click', function() {
+            that.on = that.on == true?false:true;
+            this.src = `/Images/radio${that.on}.png`;
+            that.callBack(that.on)
+        })
+    }
+}
+
+
+class MultiOption {
+    constructor(sourceIdArray,defaultId = false, callBackFxn = false,){
+        this.idset = [... sourceIdArray];
+        this.currentActiveId = defaultId;
+        this.callBack = callBackFxn;
+        this.#bindIt();
+    }
+
+    #bindIt = () => {
+        let that = this;
+        for(let i of this.idset){
+            document.querySelector('#'+i).addEventListener('click', function() {
+                if(this.id === that.currentActiveId){return}
+               that.currentActiveId = this.id;
+               that.#changeState();
+                this.src = '/Images/radiotrue.png';
+                if(that.callBack === false){return}
+                that.callBack(this.id);
+            })
+        } 
+        if(this.currentActiveId === false){return}
+        document.querySelector('#'+ this.currentActiveId).click();      
+    }
+
+    #changeState = () => {for(let i of this.idset){document.querySelector('#'+i).src = '/Images/radiofalse.png';}}
+}

@@ -5,11 +5,14 @@
     padding-bottom: 50px;
 }
 
+#hints { display: block; width: 90%; height: 40px; margin: 10px auto; text-align: center;}
+
 .quizz-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
     width: 100%;
     margin: 30px auto;
+    margin-top: 10px;
     background-color: var(--dblue1);
 }
 
@@ -57,13 +60,14 @@
     grid-template-columns: 100%;
     row-gap: 20px;
     width: 90%;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 .quizz-body-wrapper p {
     border: 1px solid var(--dgrey4);
+    border-right: 0;
+    border-left: 0;
     padding: 7px;
     min-height: 100px;
-    border-radius: 5px;
 }
 
 .infor-icon-wrapper {
@@ -83,8 +87,7 @@
 }
 .quizz-body-wrapper .opt span {
     font-size: 1rem;
-    border: 1px solid var(--dgrey4);
-    border-radius: 5px;
+    border-bottom: 1px solid var(--dgrey4);
     padding: 7px;
 }
 
@@ -98,52 +101,49 @@
 /*.............live result styling..............*/
 
 .quizz-score-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: fit-content;
+    height: fit-content;
     position: absolute;
-    top: 63vh;
-    left: calc(100% - 30px);
-    padding: 0;
+    background-color: var(--dgrey1);
+
+    top: 220px;
+    left: calc(100% - 175px);
+    padding: 0 20px;
     margin: 0;
 }
 
-
-
-.quizz-score-wrapper img {
-    height: 50px;
-    width: 20px;
-}
-
-
 .live-result {
-    display: flex;
-    flex-direction: column;
+    width: fit-content;
+    width: 130px;
+    padding: 0;
+    margin: 0 auto;
 }
 
-.live-result .l-r-content {
-    display: grid;
-    grid-template-columns: 100%;
-    row-gap: 10px;
-    background-color: var(--dgrey2);
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+table caption {
+    margin: 10px auto;
+}
+
+table th, table td {
+    text-align: left;
     border: 1px solid var(--dgrey4);
-    padding: 15px;
+    padding: 7px;
 }
 
-.r-item {
-    display: grid;
-    grid-template-columns: 100%;
-    row-gap: 5px;
-    justify-items: center;
+table tr:nth-child(odd) {
+    background-color: var(--dgrey2);
 }
-.r-item small {
-font-size: 0.8rem;
+table th {
+    background-color: var(--dblue1);
 }
-.r-item button {
-width: fit-content;
-}
+
 
 /*...........quizz naver..............*/
 .quizz-naver {
@@ -159,7 +159,6 @@ width: fit-content;
 /*....................info comments and replies............*/
 .quizz-info-wrapper {
     background-color: var(--dblue1);
-    border: 1px solid white;
     width: 100%;
     margin: 0 auto;
     position: absolute;

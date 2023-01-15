@@ -19,16 +19,16 @@
         
         <div class="confirm-it">
             <div class="left-div">
-                <h3 id="confirmationHead">JavaScript Test</h3>
+                <h3 id="testType">JavaScript Test</h3>
                 <table id="detailsTable">
                     <tbody>
                         <tr>
                             <th>Course</th>
-                            <th>CourseName</th>
+                            <th id="courseName">CourseName</th>
                         </tr>
                         <tr>
                             <td>Level</td>
-                            <td>Beginner</td>
+                            <td id="courseLevel">Beginner</td>
                         </tr>
                         <tr>
                             <td>No. of quizz</td>
@@ -40,7 +40,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <button class="submitBtn">confirm</button>
+                <a href="/answer.html"><button class="submitBtn">confirm</button></a>
             </div>
             <div class="right-div">
                 <p>You are about to take <span>a ${javascript beginner} </span> level test. Only 10 questions are available for free users. Payed users have access to all questions and courses.
@@ -60,6 +60,14 @@
         function SortIt(){
             document.querySelector("#quizzOrder").innerText = document.querySelector("#quizzOrder").innerText == 'Chronological'?'Random':'Chronological';
         }
+
+        this.addEventListener('load', () => {
+            let selectedCourse = JSON.parse(sessionStorage.getItem('course'));
+            document.querySelector('#testType').innerText = selectedCourse.name + " Test"
+            document.querySelector('#courseName').innerText = selectedCourse.name;
+            document.querySelector('#courseLevel').innerText = selectedCourse.level;
+        });
+
     </script>
 </body>
 </html>

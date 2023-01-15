@@ -19,13 +19,14 @@
 <body>
     <div class="quizz-main-wrapper">
         <div class="close-confirm"><span class="close" id="closeConfirm"> <a href="/">x</a></span></div>
-        <h1>Advanced JavaScript MCQ</h1>
+        <h1 id="testHeading">Intermediate Mathemathics MCQ</h1>
+        <small id="hints" style="display: block; height: 40px;">&nbsp;</small>
         <div class="quizz-wrapper">
             <div class="quizz-settings-wrapper">
                 <div class="use-timer">
-                    <img src="/Images/radioOff.png" width="3px" height="auto" alt="off">
+                    <img src="/Images/radiofalse.png" id="autoSubmitR" width="3px" height="auto" alt="off">
                     <small>Auto submit</small>
-                    <img src="/Images/radioOn.png" width="3px" height="auto" alt="on">
+                    <img src="/Images/radiofalse.png" id="useTimeR" width="3px" height="auto" alt="on">
                     <small>Use time</small>
                 </div>
                 <button id="timerBtn" class="circularBtn">27</button>
@@ -36,24 +37,28 @@
                 <button id="showScore" class="shadowBtn">live</button>
             </div>
             <div class="quizz-body-wrapper">
-                <p id="qz"> Question</p>
+                <p id="qz"></p>
                 <div class="infor-icon-wrapper hideit" id="quizzDetails"><button class="close" id="openInfoWrapper">i</button></div>
-                <div class="opt"><button id="qbtno1">A</button><span id="qzo1">answer bhihb hguihgiuhi hiuhiuh h uhiuhu uhuihuhi ihiuhuhui ihuihui uhiuhA</span></div>
-                <div class="opt"><button id="qbtno2">B</button><span id="qzo2">answer B</span></div>
-                <div class="opt"><button id="qbtno3">C</button><span id="qzo3">answer C</span></div>
-                <div class="opt"><button id="qbtno4">D</button><span id="qzo4">answer D</span></div>
-                <div class="submit-wrapper"><button class="submitBtn" id="nextq">Next</button></div>
+                <div class="opt"><button id="qbtno1">A</button><span id="qzo1"></span></div>
+                <div class="opt"><button id="qbtno2">B</button><span id="qzo2"></span></div>
+                <div class="opt"><button id="qbtno3">C</button><span id="qzo3"></span></div>
+                <div class="opt"><button id="qbtno4">D</button><span id="qzo4"></span></div>
+                <div class="submit-wrapper" id="nextqnextq"><button class="submitBtn" onclick="document.getElementById('autoSubmitR').click();document.getElementById('nextq').click();">Start</button></div>
             </div>
-            <div class="quizz-score-wrapper left-fixed">
+            <div class="quizz-score-wrapper">
                 <div class="live-result hideit" id="liveScore">
-                    <h4>Live Result</h4>
-                    <div class="l-r-content">
-                        <div class="r-item"><button>7</button><small>Total Attempts</small></div>
-                        <div class="r-item"><button>2</button><small>Passed</small></div>
-                        <div class="r-item"><button>7</button><small>Failed</small></div>
-                        <div class="r-item"><button>46%</button><small>Success Rate</small></div>
-                        <div class="r-item"><button>F</button><small>Grade</small></div>
-                    </div>
+                    <div><span id="hideResult">x</span></div>
+                    <table>
+                        <caption>Live Result</caption>
+                        <tbody>
+                            <tr><td><small>Attempts</small></td><td><span id="Qattempts">0</span></td></tr>
+                            <tr><td><small>Passed</small></td><td><span id="Qpassed">0</span></td></tr>
+                            <tr><td><small>Failed</small></td><td><span id="Qfailed">0</span></td></tr>
+                            <tr><td><small>Skipped</small></td><td><span id="Qskipped">0</span></td></tr>
+                            <tr><td><small>Success Rate</small></td><td><span id="QsuccessRate">0</span></td></tr>
+                            <tr><td><small>Grade</small></td><td><span id="Qgrade">0</span></td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -67,7 +72,7 @@
             <img src="/Images/singleArrow.png" width="50px" style="transform: rotate(180deg);" alt="previous">
             <span id="qCount">14 of 50</span>
             <img src="/Images/singleArrow.png" width="50px" alt="next">
-            <img src="/Images/skip.png" width="40px" alt="skip">
+            <img src="/Images/skip.png" id="nextq" width="40px" alt="skip">
             
         </div>
 

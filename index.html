@@ -22,9 +22,9 @@
                 <span id="closeMenu">x</span>
             </div>
             <div class="pages">
+                <span>Home</span>
                 <span>About</span>
-                <span><a href="answer.html">Quizz</a></span>
-                <span><a href="question.html">Set MCQ</a></span>
+                <span>Contact</span>
             </div>
             <img src="/Images/vLine.png" height="40px" class="v-separator" alt="separator line">
             <div class="user-actions">
@@ -33,8 +33,7 @@
                 <span>Certification</span>
             </div>
             <img src="/Images/vLine.png" height="40px" class="v-separator" alt="separator line">
-        </div>
-            
+        </div>            
 
         <div class="search-wrapper">
                 <div class="search-bar">
@@ -83,56 +82,7 @@
         </div>
     </main>
 
-    <div class="search-result">
-
-        <div class="item-x">
-            <span class="course">React.js / 2,452</span>
-            <div class="q-options">
-                <span class="b-l"><img src="/Images/appleBlue.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-                <span class="i-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"><small>234</small></span>
-                <span class="a-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-            </div>
-        </div>
-        <div class="item-x">
-            <span class="course">JQuery / 2,452</span>
-            <div class="q-options">
-                <span class="b-l"><img src="/Images/appleBlue.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-                <span class="i-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"><small>234</small></span>
-                <span class="a-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-            </div>
-        </div>
-        <div class="item-x">
-            <span class="course">Bootstrap / 2,452</span>
-            <div class="q-options">
-                <span class="b-l"><img src="/Images/appleBlue.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-                <span class="i-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"><small>234</small></span>
-                <span class="a-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-            </div>
-        </div>
-        <div class="item-x">
-            <span class="course">Node.js / 2,452</span>
-            <div class="q-options">
-                <span class="b-l"><img src="/Images/appleBlue.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-                <span class="i-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"><small>234</small></span>
-                <span class="a-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-            </div>
-        </div>
-        <div class="item-x">
-            <span class="course">VBA / 42,078</span>
-            <div class="q-options">
-                <span class="b-l"><img src="/Images/appleBlue.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-                <span class="i-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"><small>234</small></span>
-                <span class="a-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-            </div>
-        </div>
-        <div class="item-x">
-            <span class="course">CSS / 289</span>
-            <div class="q-options">
-                <span class="b-l"><img src="/Images/appleBlue.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-                <span class="i-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"><small>234</small></span>
-                <span class="a-l"><img src="/Images/appleGrey.png" width="70px" height="auto" alt="beginner"> <small>234</small></span>
-            </div>
-        </div>
+    <div class="search-result" id="searchResult">
     </div>
 
 
@@ -162,9 +112,12 @@
     </div>
     <footer>
         <a href="/test.html"><small>2022</small></a>
+        <a href="/confirm.html" id="navtoConfirm" style="display: none;"><small>2022</small></a>
     </footer>
     
     <script src="Js/index.js"></script>
     <script src="Js/display.js"></script>
+    <script src="Js/result.js"></script>
+    <script src="Js/search.js"></script>
 </body>
 </html>
