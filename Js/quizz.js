@@ -143,7 +143,7 @@ class Test {
         this.currentQuizz.answered = true;
         let btnHint = document.querySelector('#navBtn'+ (this.currentQuizz.id+1));
         btnHint.scrollIntoView({behavior:'smooth', inline:'center', block:'center'});
-       // this.data.attempts +=1  
+        
         if(this.currentQuizz.ans.indexOf(ans) < 0){ 
             this.setFomats([ans], 'wrong');
             btnHint.classList.add('wrong');

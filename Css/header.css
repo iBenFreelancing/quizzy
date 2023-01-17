@@ -24,8 +24,7 @@ footer {
 .my-theme span, .results-per-page  span{
     display: inline-block;
     border-radius: 5px;
-   background-color: var(--dgrey3);
-   color: var(--dblue1);
+   color: var(--dtdark3);
    width: fit-content;
    padding: 2px 5px;
    font-size: 1.5rem;
@@ -65,7 +64,6 @@ header {
     grid-template-columns: 40px calc(100% - 40px);
     width: 100%;
     padding: 20px 15px;
-    background-color: var(--dgrey1);
 }
 
 .logo {
@@ -83,7 +81,8 @@ header {
     width: 94%;
     left: 3%;
     height: 100%;
-    background-color: var(--dgrey3);
+    background-color: var(--menuBg);
+    z-index: 5;
 }
 
 .menu-wrapper span {
@@ -92,12 +91,22 @@ header {
     cursor: pointer;
     font-size: var(--menuFontSize);
 }
+
+.pages {
+    color: var(--textColorDefault);
+}
+
+.user-actions {
+    color: var(--textColorBold);
+    font-weight: bold;
+}
+
 .menu-wrapper .pages span:hover {
   font-weight: bold;
   text-decoration: underline;
 }
 .menu-wrapper .user-actions span:hover {
-  color: orangered;
+  color: white;
 }
 
 .menu-wrapper .v-separator {display: none;}
@@ -122,9 +131,4 @@ header {
     width: 100%;
     margin: 0 auto;
     position: relative;
-}
-
-.user-actions {
-    color: var(--dtyellow);
-    font-weight: bold;
 }

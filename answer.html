@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="Css/main.css">
     <link rel="stylesheet" href="Css/confirm.css">
     <link rel="stylesheet" href="Css/answer.css">
-    <link rel="stylesheet" href="Css/ctr.css">
-    
+    <link rel="stylesheet" href="Css/ctr.css">    
     <link rel="stylesheet" href="Css/mediaq.css">
+    <link rel="stylesheet" href="Css/variables.css">
 
 </head>
 <body>
@@ -76,14 +76,14 @@
             
         </div>
 
-        <div class="quizz-list">
+        <div class="result-nav-wrapper">
             <div class="result-naver">
                 
-                <img src="/Images/singleArrow.png" id="goLeft" style="transform: rotate(180deg);" height="60px" width="auto" alt="next result page">
+                <img src="/Images/hidearrowI.png" id="goLeft"  height="60px" width="auto" alt="next result page">
                 <div class="h-scrollable" id="hScroll">
                    
                 </div>
-                <img src="/Images/singleArrow.png" id="goRight" height="60px" width="auto" alt="next result page">
+                <img src="/Images/hidearrowI.png" id="goRight" style="transform: rotate(180deg);" height="60px" width="auto" alt="next result page">
                 
             </div>
         </div>
@@ -137,11 +137,37 @@
             </div>
         </div>
     </div>
+    <div class="user-settings">
+        <div class="results-per-page">
+            <h4>Results per page</h4>
+            <div class="srpp">
+                <span id="decreaseR">-</span>
+                <small id="searchResultsPerPage">5</small>
+                <span id="increaseR">+</span>
+            </div>
+        </div>
+
+        <div class="my-theme">
+            <h4>Themes</h4>
+            <div class="themes-list">
+                <span id="lightTheme" style="background-color: white;"></span>
+                <span id="darkTheme" style="background-color: rgb(3, 1, 28);"></span>
+                <span id="blueTheme" style="background-color: rgb(15, 48, 68);"></span>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+
+        <a href="/test.html"><small>2022</small></a>
+        <a href="/confirm.html" id="navtoConfirm" style="display: none;"><small>2022</small></a>
+    </footer>
  
    <script src="/Js/index.js"></script>
    <script src="/Js/q.js"></script>
    <script src="/Js/display.js"></script>
    <script src="/Js/quizz.js"></script>
+   <script src="/Js/themes.js"></script>
    
 </body>
 </html>

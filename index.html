@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Css/result_item.css">
     <link rel="stylesheet" href="Css/ctr.css">
     <link rel="stylesheet" href="Css/mediaq.css">
+    <link rel="stylesheet" href="Css/variables.css">
 
 </head>
 <body>
@@ -49,68 +50,50 @@
             <h1>Home Of Self Evaluation</h1>
             <h3>Quizz for every course</h3>
         </div>
+    </main>
 
+    <div class="result-nav-wrapper">
         <span id="resultHint">Showing 5 of 45 pages</span>
-
         <div class="result-naver">
-            <button class="hideit">Previous</button>
-            <img src="/Images/singleArrow.png" id="goLeft" style="transform: rotate(180deg);" height="60px" width="auto" alt="next result page">
-            <div class="h-scrollable">
+            <img src="/Images/hidearrowI.png" id="goLeft" height="20px" width="auto" alt="next result page">
+            <div class="h-scrollable" id="hScrollable">
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
                 <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>10</button>
-                <button>11</button>
-                <button>12</button>
-                <button>13</button>
-                <button>14</button>
-                <button>15</button>
-                <button>16</button>
-                <button>17</button>
-                <button>18</button>
-                <button>19</button>
-                <button>20</button>
             </div>
-            <img src="/Images/singleArrow.png" id="goRight" height="60px" width="auto" alt="next result page">
-            <button class="hideit">Next</button>
-        </div>
-    </main>
-
-    <div class="search-result" id="searchResult">
+            <img src="/Images/hidearrowI.png" id="goRight"  style="transform: rotate(180deg);" height="20px" width="auto" alt="next result page">
+            
+        </div>        
     </div>
 
+    <div class="search-result" id="searchResult"></div>
 
     <glory>
         <img src="/Images/people.png" width="90%" height="auto" alt="">
     </glory>
     <div class="user-settings">
         <div class="results-per-page">
-            <h4>results per page</h4>
+            <h4>Results per page</h4>
             <div class="srpp">
-                <span id="decreaseR">&lt</span>
-                <small id="rppOut">5</small>
-                <span id="increaseR">&gt</span>
+                <span id="decreaseR">-</span>
+                <small id="searchResultsPerPage">5</small>
+                <span id="increaseR">+</span>
             </div>
         </div>
 
         <div class="my-theme">
             <h4>Themes</h4>
             <div class="themes-list">
-                <span style="background-color: white;"></span>
-                <span></span>
-                <span style="background-color: black;"></span>
-                <span style="background-color: green;"></span>
+                <span id="lightTheme" style="background-color: white;"></span>
+                <span id="darkTheme" style="background-color: rgb(3, 1, 28);"></span>
+                <span id="blueTheme" style="background-color: rgb(15, 48, 68);"></span>
             </div>
         </div>
         
     </div>
     <footer>
+
         <a href="/test.html"><small>2022</small></a>
         <a href="/confirm.html" id="navtoConfirm" style="display: none;"><small>2022</small></a>
     </footer>
@@ -119,5 +102,6 @@
     <script src="Js/display.js"></script>
     <script src="Js/result.js"></script>
     <script src="Js/search.js"></script>
+    <script src="Js/themes.js"></script>
 </body>
 </html>

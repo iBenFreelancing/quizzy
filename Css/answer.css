@@ -1,6 +1,5 @@
 
 .quizz-main-wrapper {
-    background-color: var(--dblue1);
     padding: 0;
     padding-bottom: 50px;
 }
@@ -13,7 +12,6 @@
     width: 100%;
     margin: 30px auto;
     margin-top: 10px;
-    background-color: var(--dblue1);
 }
 
 .quizz-settings-wrapper {
@@ -63,7 +61,7 @@
     margin: 0 auto;
 }
 .quizz-body-wrapper p {
-    border: 1px solid var(--dgrey4);
+    border: 1px solid grey;
     border-right: 0;
     border-left: 0;
     padding: 7px;
@@ -87,7 +85,6 @@
 }
 .quizz-body-wrapper .opt span {
     font-size: 1rem;
-    border-bottom: 1px solid var(--dgrey4);
     padding: 7px;
 }
 
@@ -135,13 +132,11 @@ table th, table td {
     text-align: left;
     border: 1px solid var(--dgrey4);
     padding: 7px;
+    color: grey;
 }
 
 table tr:nth-child(odd) {
     background-color: var(--dgrey2);
-}
-table th {
-    background-color: var(--dblue1);
 }
 
 
@@ -152,9 +147,9 @@ table th {
     align-items: center;
     justify-content: center;
     column-gap: 20px;
-    background-color: var(--dblue1);
     padding: 15px;
 }
+.quizz-naver small {text-align: center;}
 
 /*....................info comments and replies............*/
 .quizz-info-wrapper {

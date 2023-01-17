@@ -22,8 +22,11 @@
 }
 
 body {
-  color: var(--dtdark3);
-  background-color: var(--dgrey1);
+  color: var(--textColorDefault);
+  background-color: var(--bodyBg);
+  background-image: var(--bodyBgImage);
+  background-repeat: repeat;
+  background-size: cover;
   font-family: Calibri, "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
   min-width: 200px;
 }
@@ -65,14 +68,12 @@ a {
 button {
   font-family: Arial, "Helvetica", sans-serif;
   font-size: var(--buttonv);
-  color: var(--dtdark3);
-  /* text-shadow:1px 1px 0px #07526e;*/
+  color: var(--btnColorDefault);
   padding: 7px 10px;
   cursor: pointer;
   border: none;
-  background-image: linear-gradient(to bottom, var(--dgrey4) 5%, var(--dgrey3) 20%, var(--dgrey3) 80%, var(--dgrey4) 100%);
+  background-color: var(--classDefaultBg);
   border-radius: 3px;
-  /*box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e;*/
 }
 
 button:active {
@@ -81,7 +82,6 @@ button:active {
 
 .submitBtn {
   border: 1px solid #5c6f75;
-  background-color: var(--dgrey4);
   padding: 12px 35px;
   border-radius: 20px;
 }

@@ -5,7 +5,7 @@ function lg(o) {
   console.log(o);
 }
 
-var scrollStep = 300,
+var scrollStep = 200,
     currentScroll = 0;
 
 function ScrollIt(bool) {
@@ -35,29 +35,15 @@ function ScrollIt(bool) {
 
 function ResultsPerPage(bool) {
   // true steps up while false steps down
-  document.querySelector("#rppOut").innerText = parseInt(document.querySelector("#rppOut").innerText) + (bool == true ? 5 : -5);
+  var elm = document.querySelector("#searchResultsPerPage");
+
+  if (bool) {
+    elm.innerText = parseInt(elm.innerText) + 5 > 20 ? 5 : parseInt(elm.innerText) + 5;
+    return;
+  }
+
+  elm.innerText = parseInt(elm.innerText) - 5 <= 0 ? 20 : parseInt(elm.innerText) - 5;
 }
-/*
-function ShowIt(classArr,bool) {
-    if(bool){
-        for(let cl of classArr){document.getElementById(cl).classList.remove('hideit')}
-        return
-    }
-    for(let cl of classArr){document.getElementById(cl).classList.add('hideit')}
-}
-
-let menuOn = 0;
-document.querySelector('#menuI').addEventListener('click', () => {
-    menuOn = (menuOn+1)%2; 
-
-    ShowIt(['menuWrapper'],menuOn);
-})
-
-document.querySelector('#closeMenu').addEventListener('click', () => {
-    document.querySelector('#menuI').click();
-})
-*/
-
 
 (void 0).addEventListener('load', function () {
   var menuToggler = new ShowIt('click', ['menuI', 'closeMenu'], 'menuWrapper', true);

@@ -1,7 +1,7 @@
 // console log shortenner
 function lg(o){console.log(o)}
 
-let scrollStep = 300, currentScroll = 0;
+let scrollStep = 200, currentScroll = 0;
 
 function ScrollIt(bool) {   // false scrolls leftward and true rightward   
     if (bool){currentScroll += scrollStep} else{currentScroll -= scrollStep}
@@ -12,30 +12,16 @@ function ScrollIt(bool) {   // false scrolls leftward and true rightward
 }
 
 function ResultsPerPage(bool){ // true steps up while false steps down
-document.querySelector("#rppOut").innerText = parseInt(document.querySelector("#rppOut").innerText) + (bool==true?5:-5);
-}
-/*
-function ShowIt(classArr,bool) {
+    let elm = document.querySelector("#searchResultsPerPage");
     if(bool){
-        for(let cl of classArr){document.getElementById(cl).classList.remove('hideit')}
+        elm.innerText = (parseInt(elm.innerText) + 5) > 20?5:(parseInt(elm.innerText) + 5);
         return
     }
-    for(let cl of classArr){document.getElementById(cl).classList.add('hideit')}
+    elm.innerText = (parseInt(elm.innerText) - 5) <= 0?20:(parseInt(elm.innerText) - 5);
 }
 
-let menuOn = 0;
-document.querySelector('#menuI').addEventListener('click', () => {
-    menuOn = (menuOn+1)%2; 
-
-    ShowIt(['menuWrapper'],menuOn);
-})
-
-document.querySelector('#closeMenu').addEventListener('click', () => {
-    document.querySelector('#menuI').click();
-})
-*/
-
 this.addEventListener('load', () => {
+    
     let menuToggler = new ShowIt('click', ['menuI','closeMenu'], 'menuWrapper', true);
 
     document.querySelector('#decreaseR').addEventListener('click', () => { ResultsPerPage(false);})

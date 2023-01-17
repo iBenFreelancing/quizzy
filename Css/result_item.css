@@ -1,7 +1,6 @@
 .search-result {
     width: 100%;
     margin: 0px auto;
-    background-color: var(--dgrey1);
 }
 
 .search-result .item-x:nth-child(even) {

@@ -1,0 +1,15 @@
+:root {
+    --bodyBg: rgb(6, 5, 21);
+    --bodyBgImage: none;
+    --textColorDefault: rgb(189, 215, 238);
+    --textColorDim: rgb(127, 127, 127);
+    --textColorBold: rgb(255, 217, 102);
+    --menuBg: rgb(30, 37, 46);
+    --bannerBg: rgba(0, 0, 0, 0.646);
+
+    --classWrongBg: rgb(95, 0, 0);
+    --classRightBg: rgb(0, 114, 154);
+    --classDefaultBg: rgb(127, 127, 127);
+
+    --btnColorDefault: rgb(0, 0, 0)
+}

@@ -14,9 +14,9 @@
     .menu-wrapper span { margin: 20px 10px; }
     .search-bar img {width: 25px; margin-left: 10px;}
     .search-bar input {padding:20px; font-size:1.1rem;}
-    .search-bar {width: 70%; margin: 0 40px;background-color: var(--dgrey4); }  
+    .search-bar {width: 70%; margin: 0 40px;background-color: rgb(82, 101, 126); }  
     .search-bar input:focus {outline: none; border-radius: 0; border: 0;}
-    .banner {height: 250px;}
+    
 
     .q-options {
         row-gap: 30px;
@@ -24,6 +24,8 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    main {height: 150px;}
 
     .search-result .item-x img { width: 25px; margin-right: 15px;}
     .my-theme, .results-per-page {
@@ -79,8 +81,11 @@
 
 .search-result .item-x {
     grid-template-columns: 25% 75%;
-   
 }
+main {
+    height: 250px;
+}
+
 button {font-size: var(--buttonv);padding:10px 15px;border-radius: 5px;}
 .result-naver img {height: 50px;}
 
@@ -132,7 +137,6 @@ button {font-size: var(--buttonv);padding:10px 15px;border-radius: 5px;}
 @media screen and (min-width: 1200px){
     
     button {padding:10px 20px;}
-    .banner {height: 350px; width: 70%;}
     header{grid-template-columns: 80px 60% auto;padding: 25px; max-width: 1400px; margin: 0 auto;}
     .logo {width: 70px; height: auto;}
     .menu-wrapper span {font-size: 1.3rem;}
