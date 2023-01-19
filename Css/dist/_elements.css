@@ -72,7 +72,7 @@ button {
   padding: 7px 10px;
   cursor: pointer;
   border: none;
-  background-color: var(--classDefaultBg);
+  /* background-color: var(--classDefaultBg); */
   border-radius: 3px;
 }
 

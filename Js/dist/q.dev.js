@@ -38,10 +38,10 @@ var Q = [{
 }, {
   q: "Which is divisible by 17?",
   o1: "7017",
-  o2: "none of the above",
-  o3: "option B is correct",
-  o4: "all of the above",
-  ans: ['o3']
+  o2: "all of the above",
+  o3: "17017",
+  o4: "none of the above",
+  ans: ['o4']
 }, {
   q: "How many different shapes can be formed by connecting 4 points in a 2D space using striaght lines?",
   o1: "1",
@@ -57,11 +57,11 @@ var Q = [{
   o4: "+3, -4",
   ans: ['o4']
 }, {
-  q: "Given that all the unknowns are positive, which is the smallest?",
-  o1: "0.009x1",
-  o2: "0.009x5",
-  o3: "0.009x0",
-  o4: "0.0099x",
+  q: "What is half of half of 100?",
+  o1: "100",
+  o2: "50",
+  o3: "25",
+  o4: "12.5",
   ans: ['o3']
 }, {
   q: "What is 0 raised to the power 0",
@@ -70,4 +70,18 @@ var Q = [{
   o3: "1",
   o4: "0",
   ans: ['o3']
+}, {
+  q: "Which is the biggest?",
+  o1: "2",
+  o2: "-2",
+  o3: "0",
+  o4: "5/3",
+  ans: ['o1']
+}, {
+  q: "Which is not a prime number?",
+  o1: "1",
+  o2: "3",
+  o3: "7",
+  o4: "9",
+  ans: ['o4']
 }];

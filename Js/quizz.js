@@ -264,7 +264,7 @@ this.addEventListener('load', () => {
 
 
 function ShowHint(txt) {
-    document.querySelector('#hints').innerText = 'returned value is ' + txt;
+    document.querySelector('#hints').innerText = txt;
     setTimeout(() => {
         document.querySelector('#hints').innerText = '  ';
     }, 3000);
@@ -273,11 +273,11 @@ function ShowHint(txt) {
 function autoSubmit(bool){
     if(bool){
         document.querySelector('#nextqnextq').classList.add('hideit');
-        ShowHint('btn is now visible')
+        ShowHint('Auto submit enabled')
         return
     }
     document.querySelector('#nextqnextq').classList.remove('hideit');
-    ShowHint('btn is no longer visible')
+    ShowHint('Auto submit disabled')
 }
 
 

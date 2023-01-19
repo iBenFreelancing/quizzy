@@ -1,0 +1,28 @@
+main {
+    width: 100%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/Images/banner.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 50%;
+    text-align: center;
+    
+}
+
+.banner {
+    background-color: var(--bannerBg);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.banner * {
+    color: var(--textColorDefault);
+}

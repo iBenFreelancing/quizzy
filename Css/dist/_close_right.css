@@ -1,0 +1,17 @@
+.close {
+  text-align: right;
+}
+
+.close span {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  padding: 2px 10px;
+  margin: 10px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.menu-wrapper .close span:hover {
+  color: orangered;
+}

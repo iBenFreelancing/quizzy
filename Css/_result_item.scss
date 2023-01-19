@@ -52,16 +52,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--dgrey1);
+    color: black;
 }
 .search-result .item-x .i-l {
     background-color: var(--dred3);
-    color: var(--dtwhite3);
+    color: var(--dtdark3);
 }
 
 .search-result .item-x .a-l {
     background-color: var(--dred2);
-    color: var(--dtwhite3);
+    color: var(--dtdark3);
 }
 
 .search-result .item-x .course {
@@ -71,6 +71,7 @@
     padding-top: 0;
     font-size: var(--spanTabled);
     text-align: left;
+    color: grey;
 }
 
 .search-result .item-x img {

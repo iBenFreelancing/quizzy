@@ -1,0 +1,13 @@
+/*..........font sizes................*/
+:root {
+  --spanPhone: 0.8rem;
+  --spanTabled: 1rem;
+  --spanPc: 1.1rem;
+  --h1v: 1.2rem;
+  --h3v: 1rem;
+  --buttonv: 0.8rem;
+  --pv: 1rem;
+  --smallv: 0.8rem;
+  --genSize: 1rem;
+  --menuFontSize: 1.1rem;
+}

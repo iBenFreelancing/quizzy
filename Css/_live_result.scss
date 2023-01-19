@@ -1,0 +1,43 @@
+/*.............live result styling..............*/
+
+.quizz-score-wrapper {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    background-color: var(--dgrey1);
+
+    top: 220px;
+    left: calc(100% - 175px);
+    padding: 0 20px;
+    margin: 0;
+}
+
+.live-result {
+    width: fit-content;
+    width: 130px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+table caption {
+    margin: 10px auto;
+}
+
+table th, table td {
+    text-align: left;
+    border: 1px solid var(--dgrey4);
+    padding: 7px;
+    color: grey;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--dgrey2);
+}

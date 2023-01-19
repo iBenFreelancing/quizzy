@@ -1,0 +1,13 @@
+.hideit {
+  display: none;
+}
+
+.wrong {
+  background-color: var(--classWrongBg) !important;
+  color: white !important;
+}
+
+.right {
+  background-color: var(--classRightBg) !important;
+  color: black !important;
+}
